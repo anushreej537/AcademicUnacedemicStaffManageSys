@@ -10,6 +10,6 @@ urlpatterns = [
     path('nonacademic/',views.nonacademic),
     path('student/',views.student),
     path('login_user/',views.login_user),
-    path('home/',views.home),
+    path('home/<int:user_id>/',views.home,name='home'),
     path('logout/',views.logout)
 ]

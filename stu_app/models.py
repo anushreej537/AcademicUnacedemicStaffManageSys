@@ -10,7 +10,7 @@ class Designation(models.Model):
 
 class User_registration(models.Model):
     usertype = models.CharField(max_length=250)
-    name = models.CharField(max_length=250)
+    names = models.CharField(max_length=250)
     contact = models.CharField(max_length=250, null=True,blank=True)
     email = models.EmailField(max_length=250)
     designation_master = models.ForeignKey(Designation,on_delete=models.CASCADE,null=True,blank=True)
